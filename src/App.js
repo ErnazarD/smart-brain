@@ -105,7 +105,7 @@ fetch("https://api.clarifai.com/v2/models/face-detection"+"/outputs",  returnCla
 .then(response => response.json())
 .then(response => {
   if(response){
-    fetch('http://localhost:3000/image', {
+    fetch('https://smart-brain-api-gilt.vercel.app/image', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
